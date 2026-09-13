@@ -1,5 +1,5 @@
 """Minimal FastAPI application for purchase intent and consumer intelligence."""
-
+from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
 
 from fastapi import FastAPI, HTTPException, Path
@@ -9,7 +9,13 @@ from app.services import consumer_intelligence, purchase_intent
 
 
 app = FastAPI(title="Consumer Intelligence API", version="0.1.0")
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class HealthResponse(BaseModel):
     status: str

@@ -1,0 +1,26 @@
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #17202a;
+  background: #f4f6f8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: #f4f6f8;
+  color: #17202a;
+}
+
+input,
+button {
+  color: inherit;
+}
