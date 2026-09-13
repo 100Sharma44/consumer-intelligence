@@ -1,0 +1,155 @@
+{
+  "selected_model": "extra_trees",
+  "selected_threshold": 0.61786550583217,
+  "selection_rule": "highest validation PR-AUC; validation F1 breaks ties and determines threshold",
+  "candidate_validation_results": {
+    "logistic_regression": {
+      "selection_threshold": 0.6831902048259956,
+      "validation_metrics": {
+        "accuracy": 0.9185091598231206,
+        "precision": 0.27058823529411763,
+        "recall": 0.9019607843137255,
+        "f1_score": 0.416289592760181,
+        "roc_auc": 0.9459504428403215,
+        "pr_auc": 0.2668276464718568,
+        "positive_class_support": 51,
+        "row_count": 1583,
+        "confusion_matrix": [
+          [
+            1408,
+            124
+          ],
+          [
+            5,
+            46
+          ]
+        ]
+      },
+      "warnings": []
+    },
+    "random_forest": {
+      "selection_threshold": 0.39997138733642995,
+      "validation_metrics": {
+        "accuracy": 0.9406190777005685,
+        "precision": 0.3130434782608696,
+        "recall": 0.7058823529411765,
+        "f1_score": 0.43373493975903615,
+        "roc_auc": 0.944049813136743,
+        "pr_auc": 0.3381472680805745,
+        "positive_class_support": 51,
+        "row_count": 1583,
+        "confusion_matrix": [
+          [
+            1453,
+            79
+          ],
+          [
+            15,
+            36
+          ]
+        ]
+      },
+      "warnings": []
+    },
+    "extra_trees": {
+      "selection_threshold": 0.61786550583217,
+      "validation_metrics": {
+        "accuracy": 0.9437776373973468,
+        "precision": 0.3173076923076923,
+        "recall": 0.6470588235294118,
+        "f1_score": 0.4258064516129032,
+        "roc_auc": 0.9522154814928583,
+        "pr_auc": 0.38269935702616975,
+        "positive_class_support": 51,
+        "row_count": 1583,
+        "confusion_matrix": [
+          [
+            1461,
+            71
+          ],
+          [
+            18,
+            33
+          ]
+        ]
+      },
+      "warnings": []
+    }
+  },
+  "final_test_metrics": {
+    "accuracy": 0.95,
+    "precision": 0.23076923076923078,
+    "recall": 0.5454545454545454,
+    "f1_score": 0.32432432432432434,
+    "roc_auc": 0.8973786949247072,
+    "pr_auc": 0.3189393731984554,
+    "positive_class_support": 11,
+    "row_count": 500,
+    "confusion_matrix": [
+      [
+        469,
+        20
+      ],
+      [
+        5,
+        6
+      ]
+    ]
+  },
+  "feature_columns": [
+    "search_count",
+    "view_count",
+    "wishlist_count",
+    "cart_count",
+    "purchase_count_before_prediction",
+    "total_event_count",
+    "activity_days",
+    "recency_hours",
+    "distinct_products_viewed",
+    "distinct_categories_interacted",
+    "average_interacted_product_price",
+    "average_carted_product_price"
+  ],
+  "seed": 42,
+  "held_out_user_count": 100,
+  "training_row_count": 6499,
+  "training_positive_count": 207,
+  "model_selection_row_count": 4916,
+  "validation_row_count": 1583,
+  "test_row_count": 500,
+  "training_snapshots": [
+    "2026-03-24 00:00:00",
+    "2026-03-31 00:00:00",
+    "2026-04-07 00:00:00",
+    "2026-04-14 00:00:00",
+    "2026-04-21 00:00:00",
+    "2026-04-28 00:00:00",
+    "2026-05-05 00:00:00",
+    "2026-05-12 00:00:00",
+    "2026-05-19 00:00:00",
+    "2026-05-26 00:00:00",
+    "2026-06-02 00:00:00",
+    "2026-06-09 00:00:00",
+    "2026-06-16 00:00:00",
+    "2026-06-23 00:00:00",
+    "2026-06-30 00:00:00",
+    "2026-07-07 00:00:00",
+    "2026-07-14 00:00:00",
+    "2026-07-21 00:00:00",
+    "2026-07-28 00:00:00"
+  ],
+  "validation_snapshots": [
+    "2026-07-07 00:00:00",
+    "2026-07-14 00:00:00",
+    "2026-07-21 00:00:00",
+    "2026-07-28 00:00:00"
+  ],
+  "test_snapshots": [
+    "2026-08-04 00:00:00",
+    "2026-08-11 00:00:00",
+    "2026-08-18 00:00:00",
+    "2026-08-25 00:00:00",
+    "2026-09-01 00:00:00"
+  ],
+  "final_fit_warnings": []
+}

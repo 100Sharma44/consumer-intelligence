@@ -1,0 +1,67 @@
+{
+  "accuracy": 0.928,
+  "precision": 0.1951219512195122,
+  "recall": 0.7272727272727273,
+  "f1_score": 0.3076923076923077,
+  "roc_auc": 0.9040713887339654,
+  "pr_auc": 0.16598690439043742,
+  "positive_class_support": 11,
+  "test_row_count": 500,
+  "confusion_matrix": [
+    [
+      456,
+      33
+    ],
+    [
+      3,
+      8
+    ]
+  ],
+  "training_row_count": 6499,
+  "training_positive_count": 207,
+  "test_positive_rate": 0.022,
+  "held_out_user_count": 100,
+  "training_snapshots": [
+    "2026-03-24 00:00:00",
+    "2026-03-31 00:00:00",
+    "2026-04-07 00:00:00",
+    "2026-04-14 00:00:00",
+    "2026-04-21 00:00:00",
+    "2026-04-28 00:00:00",
+    "2026-05-05 00:00:00",
+    "2026-05-12 00:00:00",
+    "2026-05-19 00:00:00",
+    "2026-05-26 00:00:00",
+    "2026-06-02 00:00:00",
+    "2026-06-09 00:00:00",
+    "2026-06-16 00:00:00",
+    "2026-06-23 00:00:00",
+    "2026-06-30 00:00:00",
+    "2026-07-07 00:00:00",
+    "2026-07-14 00:00:00",
+    "2026-07-21 00:00:00",
+    "2026-07-28 00:00:00"
+  ],
+  "test_snapshots": [
+    "2026-08-04 00:00:00",
+    "2026-08-11 00:00:00",
+    "2026-08-18 00:00:00",
+    "2026-08-25 00:00:00",
+    "2026-09-01 00:00:00"
+  ],
+  "feature_columns": [
+    "search_count",
+    "view_count",
+    "wishlist_count",
+    "cart_count",
+    "purchase_count_before_prediction",
+    "total_event_count",
+    "activity_days",
+    "recency_hours",
+    "distinct_products_viewed",
+    "distinct_categories_interacted",
+    "average_interacted_product_price",
+    "average_carted_product_price"
+  ],
+  "warnings": []
+}
